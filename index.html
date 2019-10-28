@@ -21,7 +21,7 @@ Email:<br>
 function loadDoc() {
 var email = document.getElementById('email').value;
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "http://nxstudios.ml/action_page.php?email="+email, true);
+  xhttp.open("GET", "https://zimzamjonny.000webhostapp.com/test.php", true);
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
       alert(xhttp.responseText);
