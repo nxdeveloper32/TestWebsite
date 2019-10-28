@@ -20,7 +20,7 @@ Email:<br>
 <script>
 function loadDoc() {
 var email = document.getElementById('email').value;
-  var abc = createCORSRequest("GET","https://zimzamjonny.000webhostapp.com/test.php");
+  var abc = createCORSRequest('GET',"https://zimzamjonny.000webhostapp.com/test.php");
   alert(abc.responseText);
  /* var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "https://zimzamjonny.000webhostapp.com/test.php", true);
@@ -57,7 +57,7 @@ xhttp.send({ 'request': "authentication token" });*/
   }
   return xhr;
 }
-
+var url = "https://zimzamjonny.000webhostapp.com/test.php";
 var xhr = createCORSRequest('GET', url);
 if (!xhr) {
   throw new Error('CORS not supported');
